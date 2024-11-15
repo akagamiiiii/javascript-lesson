@@ -44,3 +44,8 @@ if (player) {
   let favorite = player.favorites.find(favorite => favorite === 'The Legend of Zelda');
   console.log(favorite);
 }
+
+//Q5 四則演算
+let totalAge = playerList.reduce((sum, player) => sum + player.age, 0);
+let averageAge = totalAge/playerList.length;
+console.log(averageAge);

@@ -18,3 +18,29 @@ let user = {
 };
 
 console.log(user.age);
+
+//Q4 配列×オブジェクト
+let playerList = [
+  {
+    name: 'John',
+    age: 26,
+    favorites: ['Card Game', 'Basket Ball', 'Programming'],
+  },
+  {
+    name: 'Bob',
+    age: 33,
+    favorites: ['Tinder', 'The Legend of Zelda'],
+  },
+  {
+    name: 'Michael',
+    age: 22,
+    favorites: ['Football', 'Smash Bros.'],
+  },
+];
+
+let player = playerList.find(player => player.favorites.includes('The Legend of Zelda'));
+
+if (player) {
+  let favorite = player.favorites.find(favorite => favorite === 'The Legend of Zelda');
+  console.log(favorite);
+}

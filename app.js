@@ -49,3 +49,16 @@ if (player) {
 let totalAge = playerList.reduce((sum, player) => sum + player.age, 0);
 let averageAge = totalAge/playerList.length;
 console.log(averageAge);
+
+//Q6 関数
+function sayHello(){
+  console.log("Hello");
+}
+
+sayHello();
+
+let sayWorld = function(){
+  console.log("World");
+}
+
+sayWorld();

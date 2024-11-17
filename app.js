@@ -76,3 +76,35 @@ let user = {
 };
 
 user.greeting();
+
+//Q8 引数
+let calc = {
+  addition: function add(){
+    let x = 2;
+    let y = 5;
+    console.log(x + y);
+  },
+
+  substraction: function substract(){
+    let x = 20;
+    let y = 10;
+    console.log(x - y);
+  },
+
+  multiplication: function multiply(){
+    let x = 7;
+    let y = 7;
+    console.log(x * y);
+  },
+
+  division: function(){
+    let x = 25;
+    let y = 5;
+    console.log(x / y);
+  },
+};
+
+calc.addition();
+calc.substraction();
+calc.multiplication();
+calc.division();

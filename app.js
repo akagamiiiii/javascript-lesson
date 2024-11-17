@@ -10,14 +10,14 @@ let languages = ["JavaScript", "PHP", "Ruby", "Python", "Go"];
 console.log(`私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです`);
 
 //Q3 オブジェクト
-let user = {
-  name: 'John',
-  age: 26,
-  bloodType: 'A',
-  favorite: 'card',
-};
+// let user = {
+//   name: 'John',
+//   age: 26,
+//   bloodType: 'A',
+//   favorite: 'card',
+// };
 
-console.log(user.age);
+// console.log(user.age);
 
 //Q4 配列×オブジェクト
 let playerList = [
@@ -62,3 +62,17 @@ let sayWorld = function(){
 }
 
 sayWorld();
+
+//Q7 メソッド
+let user = {
+  name: 'John',
+  age: 26,
+  bloodType: 'A',
+  favorite: 'card',
+  birthday: '2000-09-27',
+  greeting: function sayHello(){
+    console.log("Hello!");
+  }
+};
+
+user.greeting();

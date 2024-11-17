@@ -120,3 +120,11 @@ console.log("5を3で割った余りは" + remainder(5, 3) + "です。");
 
 //Q10 スコープ
 // 変数xは、関数foo内のみでスコープが有効であり、関数内でしか参照できないため。
+
+
+
+//応用編
+//Q1 標準組み込みオブジェクト
+let randomInt = Math.floor(Math.random() * 10);
+
+console.log(randomInt);

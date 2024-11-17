@@ -128,3 +128,9 @@ console.log("5を3で割った余りは" + remainder(5, 3) + "です。");
 let randomInt = Math.floor(Math.random() * 10);
 
 console.log(randomInt);
+
+//Q2 コールバック関数
+setTimeout(() => {
+  console.log("Hello World!");
+}, 3000);
+

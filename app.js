@@ -108,3 +108,12 @@ calc.addition();
 calc.substraction();
 calc.multiplication();
 calc.division();
+
+//Q9 返り値
+function remainder(x, y){
+  let rem = x % y;
+
+  return rem;
+}
+
+console.log("5を3で割った余りは" + remainder(5, 3) + "です。");

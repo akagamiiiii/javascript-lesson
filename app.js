@@ -134,3 +134,13 @@ setTimeout(() => {
   console.log("Hello World!");
 }, 3000);
 
+//Q3 if
+let num = 3;
+
+if(num > 0){
+  console.log("num is greater than 0");
+}else if(num < 0){
+  console.log("num is less than 0");
+}else{
+  console.log("num is 0");
+}

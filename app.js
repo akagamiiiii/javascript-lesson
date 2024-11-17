@@ -117,3 +117,6 @@ function remainder(x, y){
 }
 
 console.log("5を3で割った余りは" + remainder(5, 3) + "です。");
+
+//Q10 スコープ
+// 変数xは、関数foo内のみでスコープが有効であり、関数内でしか参照できないため。

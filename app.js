@@ -66,11 +66,11 @@ sayWorld();
 //Q7 メソッド
 user.birthday = '2000-09-27';
 
-user.greeting = function sayHello(){
+user.sayHello = function sayHello(){
   console.log("Hello!");
 }
 
-user.greeting();
+user.sayHello();
 console.log(user);
 
 //Q8 引数

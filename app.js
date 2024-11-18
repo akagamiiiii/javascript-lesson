@@ -75,35 +75,27 @@ console.log(user);
 
 //Q8 引数
 let calc = {
-  addition: function add(){
-    let x = 2;
-    let y = 5;
+  add: function add(x, y){
     console.log(x + y);
   },
 
-  substraction: function substract(){
-    let x = 20;
-    let y = 10;
+  substract: function substract(x, y){
     console.log(x - y);
   },
 
-  multiplication: function multiply(){
-    let x = 7;
-    let y = 7;
+  multiply: function multiply(x, y){
     console.log(x * y);
   },
 
-  division: function(){
-    let x = 25;
-    let y = 5;
+  divide: function devide(x, y){
     console.log(x / y);
   },
 };
 
-calc.addition();
-calc.substraction();
-calc.multiplication();
-calc.division();
+calc.add(2, 5);
+calc.substract(20, 10);
+calc.multiply(7, 7);
+calc.divide(25, 5);
 
 //Q9 返り値
 function remainder(x, y){

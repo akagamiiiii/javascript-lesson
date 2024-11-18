@@ -95,7 +95,7 @@ let calc = {
 calc.add(2, 5);
 calc.substract(20, 10);
 calc.multiply(7, 7);
-calc.divide(25, 5);
+calc.divide(25, 5　);
 
 //Q9 返り値
 function remainder(x, y){
@@ -145,9 +145,9 @@ console.log(numbers);
 //Q5 for × if
 let mixed = [4, "2", 5, "8", "9", 0, 1];
 
-mixed.forEach(numbers => {
-  if(typeof numbers === "number"){
-    if(numbers % 2 === 0){
+mixed.forEach(number => {
+  if(typeof number === "number"){
+    if(number % 2 === 0){
       console.log("even");
     }else{
       console.log("odd");

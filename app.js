@@ -95,7 +95,7 @@ let calc = {
 calc.add(2, 5);
 calc.substract(20, 10);
 calc.multiply(7, 7);
-calc.divide(25, 5　);
+calc.divide(25, 5);
 
 //Q9 返り値
 function remainder(x, y){

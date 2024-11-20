@@ -1,0 +1,203 @@
+//Q1 変数
+let nickname = "油井真";
+let age = 25;
+
+console.log("私のニックネームは" + nickname + "です。年齢は" + age + "歳です。");
+
+//Q2 配列
+let languages = ["JavaScript", "PHP", "Ruby", "Python", "Go"];
+
+console.log(`私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです`);
+
+//Q3 オブジェクト
+let user = {
+  name: 'John',
+  age: 26,
+  bloodType: 'A',
+  favorite: 'card',
+};
+
+console.log(user.age);
+
+//Q4 配列×オブジェクト
+let playerList = [
+  {
+    name: 'John',
+    age: 26,
+    favorites: ['Card Game', 'Basket Ball', 'Programming'],
+  },
+  {
+    name: 'Bob',
+    age: 33,
+    favorites: ['Tinder', 'The Legend of Zelda'],
+  },
+  {
+    name: 'Michael',
+    age: 22,
+    favorites: ['Football', 'Smash Bros.'],
+  },
+];
+
+// let playerList = {
+//   john: {
+//     name: 'John',
+//     age: 26,
+//     favorites: ['Card Game', 'Basket Ball', 'Programming'],
+//   },
+//   Bob: {
+//     name: 'Bob',
+//     age: 33,
+//     favorites: ['Tinder', 'The Legend of Zelda'],
+//   },
+//   Michael: {
+//     name: 'Michael',
+//     age: 22,
+//     favorites: ['Football', 'Smash Bros.'],
+//   },
+// };
+
+let player = playerList.find(player => player.favorites.includes('The Legend of Zelda'));
+
+if (player) {
+  let favorite = player.favorites.find(
+    favorite => favorite === 'The Legend of Zelda'
+    // ひきすう => かえり値;
+    // (ひきすう) => {
+      // しょり
+    // }
+
+    // function (favorite) {
+    //   return favorite === 'The Legend of Zelda';
+    // }
+  );
+  console.log(favorite);
+}
+
+//Q5 四則演算
+let totalAge = playerList.reduce(
+  (sum, player) => sum + player.age,
+  0
+);
+let averageAge = totalAge/playerList.length;
+console.log(averageAge);
+
+//Q6 関数
+function sayHello(){
+  console.log("Hello");
+}
+
+sayHello();
+
+let sayWorld = function(){
+  console.log("World");
+}
+
+sayWorld();
+
+//Q7 メソッド
+user.birthday = '2000-09-27';
+
+user.sayHello = function sayHello(){
+  console.log("Hello!");
+}
+
+user.sayHello();
+console.log(user);
+
+//Q8 引数
+let calc = {
+  add: function add(x, y){
+    console.log(x + y);
+  },
+
+  substract: function substract(x, y){
+    console.log(x - y);
+  },
+
+  multiply: function multiply(x, y){
+    console.log(x * y);
+  },
+
+  divide: function devide(x, y){
+    console.log(x / y);
+  },
+};
+
+calc.add(2, 5);
+calc.substract(20, 10);
+calc.multiply(7, 7);
+calc.divide(25, 5);
+
+//Q9 返り値
+function remainder(x, y){
+  let rem = x % y;
+
+  return rem;
+}
+
+console.log("5を3で割った余りは" + remainder(5, 3) + "です。");
+
+//Q10 スコープ
+// 変数xは、関数foo内のみでスコープが有効であり、関数内でしか参照できないため。
+
+
+
+//応用編
+//Q1 標準組み込みオブジェクト
+let randomInt = Math.floor(Math.random() * 10);
+
+console.log(randomInt);
+
+//Q2 コールバック関数
+setTimeout(() => {
+  console.log("Hello World!");
+}, 3000);
+
+//Q3 if
+let num = 3;
+
+if(num > 0){
+  console.log("num is greater than 0");
+}else if(num < 0){
+  console.log("num is less than 0");
+}else{
+  console.log("num is 0");
+}
+
+//Q4 for
+let numbers = [];
+
+for(let i = 0; i < 100; i++){
+  numbers.push(i);
+}
+
+console.log(numbers);
+
+//Q5 for × if
+let mixed = [4, "2", 5, "8", "9", 0, 1];
+
+mixed.forEach(number => {
+  if(typeof number === "number"){
+    if(number % 2 === 0){
+      console.log("even");
+    }else{
+      console.log("odd");
+    }
+  }else{
+    console.log("not number");
+  }
+});
+
+// mixed.forEach(determine);
+
+// let determine = number => {
+//   if(typeof number === "number"){
+//     if(number % 2 === 0){
+//       console.log("even");
+//     }else{
+//       console.log("odd");
+//     }
+//   }else{
+//     console.log("not number");
+//   }
+// }

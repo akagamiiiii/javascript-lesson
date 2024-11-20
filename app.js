@@ -38,15 +38,46 @@ let playerList = [
   },
 ];
 
+// let playerList = {
+//   john: {
+//     name: 'John',
+//     age: 26,
+//     favorites: ['Card Game', 'Basket Ball', 'Programming'],
+//   },
+//   Bob: {
+//     name: 'Bob',
+//     age: 33,
+//     favorites: ['Tinder', 'The Legend of Zelda'],
+//   },
+//   Michael: {
+//     name: 'Michael',
+//     age: 22,
+//     favorites: ['Football', 'Smash Bros.'],
+//   },
+// };
+
 let player = playerList.find(player => player.favorites.includes('The Legend of Zelda'));
 
 if (player) {
-  let favorite = player.favorites.find(favorite => favorite === 'The Legend of Zelda');
+  let favorite = player.favorites.find(
+    favorite => favorite === 'The Legend of Zelda'
+    // ひきすう => かえり値;
+    // (ひきすう) => {
+      // しょり
+    // }
+
+    // function (favorite) {
+    //   return favorite === 'The Legend of Zelda';
+    // }
+  );
   console.log(favorite);
 }
 
 //Q5 四則演算
-let totalAge = playerList.reduce((sum, player) => sum + player.age, 0);
+let totalAge = playerList.reduce(
+  (sum, player) => sum + player.age,
+  0
+);
 let averageAge = totalAge/playerList.length;
 console.log(averageAge);
 
@@ -156,3 +187,17 @@ mixed.forEach(number => {
     console.log("not number");
   }
 });
+
+// mixed.forEach(determine);
+
+// let determine = number => {
+//   if(typeof number === "number"){
+//     if(number % 2 === 0){
+//       console.log("even");
+//     }else{
+//       console.log("odd");
+//     }
+//   }else{
+//     console.log("not number");
+//   }
+// }
